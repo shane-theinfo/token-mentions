@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AI margin pressure — Q1 2026</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px 80px; color: #1a1a1a; line-height: 1.5; }
+  h1 { font-size: 22px; margin-bottom: 4px; }
+  .sub { color: #6b6b6b; font-size: 14px; margin-bottom: 24px; }
+
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 24px 0; }
+  .stat { background: #fafaf9; border: 1px solid #e5e5e0; border-radius: 6px; padding: 14px 16px; }
+  .stat .num { font-size: 28px; font-weight: 600; line-height: 1; }
+  .stat .lbl { font-size: 12px; color: #6b6b6b; margin-top: 4px; }
+
+  .pie-section { margin: 24px 0 32px; padding: 16px 18px; background: #fafaf9; border: 1px solid #e5e5e0; border-radius: 6px; }
+  .pie-title { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+  .pie-explain { font-size: 13px; color: #6b6b6b; margin-bottom: 12px; }
+  .pie-row { display: flex; gap: 24px; align-items: center; }
+  .pie-legend { font-size: 13px; }
+  .pie-legend .li { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
+  .pie-legend .sw { width: 12px; height: 12px; border-radius: 2px; flex-shrink: 0; }
+  .pie-legend .ct { font-family: "SF Mono", Menlo, monospace; color: #6b6b6b; font-size: 12px; margin-left: 6px; }
+
+  .card { border: 1px solid #e5e5e0; border-left: 4px solid #9ca3af; border-radius: 6px; margin: 6px 0; background: white; }
+  summary { padding: 12px 16px; cursor: pointer; list-style: none; font-size: 15px; }
+  summary::-webkit-details-marker { display: none; }
+  summary:hover { background: #fafafa; }
+  .t-row { display: flex; align-items: center; gap: 10px; }
+  .ticker { font-family: "SF Mono", Menlo, monospace; font-weight: 600; color: #111; flex-shrink: 0; }
+  .name { flex: 1; min-width: 0; }
+  .cohort { font-size: 11px; color: #6b6b6b; background: #f3f4f6; padding: 2px 8px; border-radius: 10px; flex-shrink: 0; }
+
+  .body { padding: 0 16px 16px; border-top: 1px solid #f0f0eb; }
+  .q { margin: 14px 0; }
+  blockquote { margin: 0 0 6px 0; font-style: italic; color: #2a2a2a; border-left: 2px solid #ddd; padding-left: 12px; }
+  .src { font-size: 12px; color: #2563eb; text-decoration: none; word-break: break-all; }
+  .src:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<h1>AI cost pressure — Q1 2026 earnings</h1>
+<p class="sub">Showing only quotes about <strong>AI costs, token costs, inference / API spend, and AI infrastructure investment</strong> across 100 public tech companies. Quotes about AI revenue, productivity claims, or generic commodity costs (memory, tariffs) are filtered out. Sorted by hypothesis fit.</p>
+
+<div class="stats">
+  <div class="stat">
+    <div class="num">63%</div>
+    <div class="lbl">explicitly attribute margin/cost pressure to AI</div>
+  </div>
+  <div class="stat">
+    <div class="num">30%</div>
+    <div class="lbl">show meaningful margin compression</div>
+  </div>
+  <div class="stat">
+    <div class="num">28%</div>
+    <div class="lbl">show headcount masking pattern</div>
+  </div>
+</div>
+
+<div class="pie-section">
+  <div class="pie-title">Distribution by hypothesis fit</div>
+  <div class="pie-explain">Each company gets a composite score from 0–9 (sum of three 0–3 sub-scores: margin pressure, AI cost signal, headcount masking). Higher score = stronger fit with the AI-margin-compression hypothesis.</div>
+  <div class="pie-row">
+    <svg viewBox="0 0 160 160" width="160" height="160"><path d="M 80.0 80.0 L 80.00 4.00 A 76.0 76.0 0 0 1 132.03 24.60 Z" fill="#dc2626"/><path d="M 80.0 80.0 L 132.03 24.60 A 76.0 76.0 0 0 1 124.67 141.49 Z" fill="#ea580c"/><path d="M 80.0 80.0 L 124.67 141.49 A 76.0 76.0 0 0 1 6.39 61.10 Z" fill="#ca8a04"/><path d="M 80.0 80.0 L 6.39 61.10 A 76.0 76.0 0 0 1 80.00 4.00 Z" fill="#16a34a"/></svg>
+    <div class="pie-legend">
+      <div class="li"><span class="sw" style="background:#dc2626"></span> Strong fit (7–9) <span class="ct">12 co. (12%)</span></div>
+      <div class="li"><span class="sw" style="background:#ea580c"></span> Moderate (5–6) <span class="ct">28 co. (28%)</span></div>
+      <div class="li"><span class="sw" style="background:#ca8a04"></span> Mild (3–4) <span class="ct">39 co. (39%)</span></div>
+      <div class="li"><span class="sw" style="background:#16a34a"></span> Counter-example (0–2) <span class="ct">21 co. (21%)</span></div>
+    </div>
+  </div>
+</div>
+
+<details class="card" style="border-left-color:#dc2626">
+  <summary>
+    <span class="t-row">
+      <span class="ticker">SHOP</span>
+      <span class="name">Shopify</span>
+      <span class="cohort">SaaS</span>
+    </span>
+  </summary>
+  <div class="body"><div class="q"><blockquote>"Economies of scale and efficiencies and support were partially offset by increased LLM cost, driven by growing merchant usage of our AI products, most notably Sidekick. We expect this dynamic to continue. The more merchants use these products, the more data we have and the better the outcomes we can deliver. And the better the outcomes, the more deeply embedded they become in the platform."</blockquote></div></div>
+</details>
+<details class="card" style="border-left-color:#dc2626">
+  <summary>
+    <span class="t-row">
+      <span class="ticker">CRM</span>
+      <span class="name">Salesforce</span>
+      <span class="cohort">Hyperscaler</span>
+    </span>
+  </summary>
+  <div class="body"><div class="q"><blockquote>"Well, tokens, those prices, we&#x27;re working with our various partners, those are going to start to go down over time and commoditize. But also importantly, when you think about our products, engineering and product is working on ways to continue to fine tune our products with things like Agentforce scripts, which is going to make it easier for us to produce the work but reduce the overall costs... So short term we don&#x27;t see gross margins getting worse, fairly neutral. Long time, we&#x27;re doing everything in conjunction with our FY27 framework and our overall operating margin improvement to continue to get efficiencies in gross margin and operating margin.&quot; — Robin Washington"</blockquote></div><div class="q"><blockquote>"Robin: Yeah, I mean this is something that we continue. Look, I think you were asking specifically, Gabriela, about what does it do to gross margins? And as we think about margins in the short run, we think we&#x27;re pretty neutral. Patrick talked about this differentiation between tokens and AWUs. Well, tokens, those prices, we&#x27;re working with our various partners, those are going to start to go down over time and commoditize. But also importantly, when you think about our products, engineering and product is working on ways to continue to fine tune our products with things like Agentforce scripts, which is going to make it easier for us to produce the work but reduce the overall costs. So those are things and then again, we&#x27;re optimizing, we&#x27;re using customer zero. Marc talks about the fact that we&#x27;re reallocating resources. We&#x27;re also looking at other things to overall continue to drive our efficiency down. So short term we don&#x27;t see gross margins getting worse, fairly neutral. Long time, we&#x27;re doing everything in conjunction with our FY27 framework and our overall operating margin improvement to continue to get efficiencies in gross margin and operating margin."</blockquote><a class="src" href="https://s205.q4cdn.com/626266368/files/doc_financials/2026/q4/Transcript-Salesforce-Inc-Q4-FY26-Earnings-Conference-Call-2-25-26.pdf" target="_blank" rel="noopener">https://s205.q4cdn.com/626266368/files/doc_financials/2026/q4/Transcript-Salesforce-Inc-Q4-FY26-Earnings-Conference-Call-2-25-26.pdf</a></div></div>
+</details>
+<details class="card" style="border-left-color:#dc2626">
+  <summary>
+    <span class="t-row">
+      <span class="ticker">INFY</span>
+      <span class="name">Infosys</span>
+      <span class="cohort">Hardware/Fintech</span>
+    </span>
+  </summary>
+  <div class="body"><div class="q"><blockquote>"Adjusted operating margin was stable at 21%. Gains from currency and Maximus were reinvested in talent, AI and sales and marketing."</blockquote></div></div>
+</details>
+<details class="card" style="border-left-color:#dc2626">
+  <summary>
+    <span class="t-row">
+      <span class="ticker">MSFT</span>
+      <span class="name">Microsoft</span>
+      <span class="cohort">Hyperscaler</span>
+    </span>
+  </summary>
+  <div class="body"><div class="q"><blockquote>"Company gross margin percentage was 68%, down year over year, driven by continued investment in AI infrastructure and growing AI product usage."</blockquote><a class="src" href="https://www.fool.com/earnings/call-transcripts/2026/04/29/microsoft-msft-q3-2026-earnings-transcript/" target="_blank" rel="noopener">https://www.fool.com/earnings/call-transcripts/2026/04/29/microsoft-msft-q3-2026-earnings-transcript/</a></div><div class="q"><blockquote>"Microsoft Cloud gross margin percentage was slightly better than expected, at 66%, and down year over year due to continued investments in AI."</blockquote><a class="src" href="https://www.fool.com/earnings/call-transcripts/2026/04/29/microsoft-msft-q3-2026-earnings-transcript/" target="_blank" rel="noopener">https://www.fool.com/earnings/call-transcripts/2026/04/29/microsoft-msft-q3-2026-earnings-transcript/</a></div></div>
+</details>
+<details class="card" style="border-left-color:#dc2626">
+  <summary>
+    <span class="t-row">
+      <span class="ticker">ORCL</span>
+      <span class="name">Oracle</span>
+      <span class="cohort">Hyperscaler</span>
+    </span>
+  </summary>
+  <div class="body"><div class="q"><blockquote>"Looking at the AI capacity we delivered in Q3, our gross margin for that remained above our 30% guidance at 32%."</blockquote><a class="src" href="https://www.fool.com/earnings/call-transcripts/2026/03/10/oracle-orcl-q3-2026-earnings-call-transcript/*" target="_blank" rel="noopener">https://www.fool.com/earnings/call-transcripts/2026/03/10/oracle-orcl-q3-2026-earnings-call-transcript/*</a></div></div>
+</details>
+<details class="card" style="border-left-color:#dc2626">
+  <summary>
+    <span class="t-row">
+      <span class="ticker">WDAY</span>
+      <span class="name">Workday</span>
+      <span class="cohort">SaaS</span>
+    </span>
+  </summary>
+  <div class="body"><div class="q"><blockquote>"This outlook incorporates an accelerated pace of AI investment across both product and go-to-market."</blockquote></div><div class="q"><blockquote>"we are prioritizing incremental investment in our agentic AI roadmap to capture a larger market opportunity."</blockquote></div></div>
+</details>
+<details class="card" style="border-left-color:#ea580c">
+  <summary>
+    <span class="t-row">
+      <span class="ticker">ARM</span>
+      <span class="name">Arm Holdings</span>
+      <span class="cohort">Semis</span>
+    </span>
+  </summary>
+  <div class="body"><div class="q"><blockquote>"Strong R&amp;D investment&quot; supports &quot;engineering expansion... including... the recently announced Arm AGI CPU product family"</blockquote><a class="src" href="https://www.fool.com/earnings/call-transcripts/2026/05/07/arm-arm-q4-2026-earnings-call-transcript/" target="_blank" rel="noopener">https://www.fool.com/earnings/call-transcripts/2026/05/07/arm-arm-q4-2026-earnings-call-transcript/</a></div></div>
+</details>
+<details class="card" style="border-left-color:#ea580c">
+  <summary>
+    <span class="t-row">
+      <span class="ticker">HPE</span>
+      <span class="name">Hewlett Packard Enterprise</span>
+      <span class="cohort">Hardware/Fintech</span>
+    </span>
+  </summary>
+  <div class="body"><div class="q"><blockquote>"given supply dynamics, our fiscal &#x27;26 strategy prioritizes higher-margin product orders, which have an impact on our AI Systems revenue growth rate"</blockquote></div></div>
+</details>
+<details class="card" style="border-left-color:#ea580c">
+  <summary>
+    <span class="t-row">
+      <span class="ticker">PINS</span>
+      <span class="name">Pinterest</span>
+      <span class="cohort">Consumer</span>
+    </span>
+  </summary>
+  <div class="body"><div class="q"><blockquote>"Starting with cost of revenue, as with Q2, we continue to expect modest headwinds from cost of revenue as a percentage of revenue in 2026 as a result of the investments in areas such as additional GPU capacity, as well as the impact from the inclusion of TV Scientific."</blockquote></div></div>
+</details>
+<details class="card" style="border-left-color:#ea580c">
+  <summary>
+    <span class="t-row">
+      <span class="ticker">RBLX</span>
+      <span class="name">Roblox</span>
+      <span class="cohort">Consumer</span>
+    </span>
+  </summary>
+  <div class="body"><div class="q"><blockquote>"Roughly a quarter of the margin reduction relative to our prior guidance is related to the incremental investments we&#x27;re making in AI."</blockquote></div></div>
+</details>
+<details class="card" style="border-left-color:#ea580c">
+  <summary>
+    <span class="t-row">
+      <span class="ticker">TEAM</span>
+      <span class="name">Atlassian</span>
+      <span class="cohort">SaaS</span>
+    </span>
+  </summary>
+  <div class="body"><div class="q"><blockquote>"During the third quarter ended March 31, 2026, the Company incurred restructuring charges associated with rebalancing of its resources and consolidating leases to accelerate its path to GAAP profitability, self-fund further investment in AI and enterprise sales, and reorganize its teams to move with more focus and speed around the Atlassian System of Work."</blockquote><a class="src" href="https://s206.q4cdn.com/270053503/files/doc_financials/2026/q3/v2/TEAM-Q3-2026-Earnings-Release-1.pdf" target="_blank" rel="noopener">https://s206.q4cdn.com/270053503/files/doc_financials/2026/q3/v2/TEAM-Q3-2026-Earnings-Release-1.pdf</a></div></div>
+</details>
+<details class="card" style="border-left-color:#ea580c">
+  <summary>
+    <span class="t-row">
+      <span class="ticker">WIX</span>
+      <span class="name">Wix.com</span>
+      <span class="cohort">Consumer</span>
+    </span>
+  </summary>
+  <div class="body"><div class="q"><blockquote>"We continue to incur elevated AI compute cost as we scale to meet stronger than expected Base 44 demand"</blockquote></div><div class="q"><blockquote>"Approximately one-third of Base 44&#x27;s AI inference cost today is attributed to token consumption of free users"</blockquote></div><div class="q"><blockquote>"Negligible incremental AI inference costs anticipated for Wix Harmony as a result of proactive infrastructure optimization"</blockquote></div></div>
+</details>
+<details class="card" style="border-left-color:#ea580c">
+  <summary>
+    <span class="t-row">
+      <span class="ticker">AMZN</span>
+      <span class="name">Amazon</span>
+      <span class="cohort">Hyperscaler</span>
+    </span>
+  </summary>
+  <div class="body"><div class="q"><blockquote>"at scale, we expect Trainium will save us tens of billions of dollars of CapEx each year and provide several hundred basis points of operating margin advantage versus relying on other chips for inference."</blockquote></div></div>
+</details>
+<details class="card" style="border-left-color:#ea580c">
+  <summary>
+    <span class="t-row">
+      <span class="ticker">PLTR</span>
+      <span class="name">Palantir</span>
+      <span class="cohort">SaaS</span>
+    </span>
+  </summary>
+  <div class="body"><div class="q"><blockquote>"Q1 adjusted expense was $649 million, up 7% sequentially and 32% year-over-year, primarily driven by the continued investment in our AI platform and technical hiring."</blockquote></div></div>
+</details>
+<details class="card" style="border-left-color:#ea580c">
+  <summary>
+    <span class="t-row">
+      <span class="ticker">UBER</span>
+      <span class="name">Uber Technologies</span>
+      <span class="cohort">Consumer</span>
+    </span>
+  </summary>
+  <div class="body"><div class="q"><blockquote>"when we set up budgets for 2026 in November, we underestimated the amount of impact the AI tools could have.&quot; — Balaji Krishnamurthy (CFO)"</blockquote><a class="src" href="https://www.fool.com/earnings/call-transcripts/2026/05/06/uber-uber-q1-2026-earnings-call-transcript/" target="_blank" rel="noopener">https://www.fool.com/earnings/call-transcripts/2026/05/06/uber-uber-q1-2026-earnings-call-transcript/</a></div></div>
+</details>
+<details class="card" style="border-left-color:#ca8a04">
+  <summary>
+    <span class="t-row">
+      <span class="ticker">DOCU</span>
+      <span class="name">Docusign</span>
+      <span class="cohort">SaaS</span>
+    </span>
+  </summary>
+  <div class="body"><div class="q"><blockquote>"We&#x27;ve optimized AI processing costs by upwards of 50x compared to running direct prompts on LLMs.&quot; — CEO Allan Thygesen"</blockquote><a class="src" href="https://www.fool.com/earnings/call-transcripts/2026/03/18/docusign-docu-q4-2026-earnings-call-transcript/" target="_blank" rel="noopener">https://www.fool.com/earnings/call-transcripts/2026/03/18/docusign-docu-q4-2026-earnings-call-transcript/</a></div></div>
+</details>
+<details class="card" style="border-left-color:#ca8a04">
+  <summary>
+    <span class="t-row">
+      <span class="ticker">EXPE</span>
+      <span class="name">Expedia Group</span>
+      <span class="cohort">Consumer</span>
+    </span>
+  </summary>
+  <div class="body"><div class="q"><blockquote>"CFO Scott Schenkel noted token costs expected to rise but &quot;teams have done good job continuing to take costs out"</blockquote><a class="src" href="https://www.investing.com/news/transcripts/earnings-call-transcript-expedias-q1-2026-earnings-beat-expectations-93CH-4670733" target="_blank" rel="noopener">https://www.investing.com/news/transcripts/earnings-call-transcript-expedias-q1-2026-earnings-beat-expectations-93CH-4670733</a></div><div class="q"><blockquote>"Company expects &quot;AI usage and associated costs—including &#x27;token costs&#x27;—to increase&quot; — CFO Scott Schenkel"</blockquote><a class="src" href="https://www.investing.com/news/transcripts/earnings-call-transcript-expedias-q1-2026-earnings-beat-expectations-93CH-4670733" target="_blank" rel="noopener">https://www.investing.com/news/transcripts/earnings-call-transcript-expedias-q1-2026-earnings-beat-expectations-93CH-4670733</a></div><div class="q"><blockquote>"some upward pressure on costs in the second half as Expedia adds skills needed to execute AI plans&quot; — CFO Scott Schenkel"</blockquote><a class="src" href="https://www.investing.com/news/transcripts/earnings-call-transcript-expedias-q1-2026-earnings-beat-expectations-93CH-4670733" target="_blank" rel="noopener">https://www.investing.com/news/transcripts/earnings-call-transcript-expedias-q1-2026-earnings-beat-expectations-93CH-4670733</a></div></div>
+</details>
+<details class="card" style="border-left-color:#ca8a04">
+  <summary>
+    <span class="t-row">
+      <span class="ticker">SNAP</span>
+      <span class="name">Snap</span>
+      <span class="cohort">Consumer</span>
+    </span>
+  </summary>
+  <div class="body"><div class="q"><blockquote>"Total infrastructure costs were $401 million in Q1, up 7% year-over-year, driven primarily by community growth, strategic investments in AI model training, and monetization serving costs."</blockquote></div></div>
+</details>
+<details class="card" style="border-left-color:#ca8a04">
+  <summary>
+    <span class="t-row">
+      <span class="ticker">OKTA</span>
+      <span class="name">Okta</span>
+      <span class="cohort">SaaS</span>
+    </span>
+  </summary>
+  <div class="body"><div class="q"><blockquote>"Uncertainty around new and emerging AI Technologies, such as generative AI Technologies, may require additional investment in the development and maintenance of proprietary and third-party datasets and machine learning models...which may be costly and could impact our expenses as we continue to expand generative AI Technologies into our product offerings."</blockquote></div></div>
+</details>
+<details class="card" style="border-left-color:#ca8a04">
+  <summary>
+    <span class="t-row">
+      <span class="ticker">TSLA</span>
+      <span class="name">Tesla</span>
+      <span class="cohort">Hyperscaler</span>
+    </span>
+  </summary>
+  <div class="body"><div class="q"><blockquote>"Our spend on AI-related initiatives, including expense development of our own AI5 chip and new products like Cybercab, Semi, Optimus, and Megablock, continue to be at elevated levels and we expect this trend to continue for the full year 2026."</blockquote></div></div>
+</details>
+<details class="card" style="border-left-color:#16a34a">
+  <summary>
+    <span class="t-row">
+      <span class="ticker">ABNB</span>
+      <span class="name">Airbnb</span>
+      <span class="cohort">Consumer</span>
+    </span>
+  </summary>
+  <div class="body"><div class="q"><blockquote>"We saw our cost-per-booking decrease about 10% year-over-year in Q1—a meaningful trajectory we expect to continue as we further improve AI customer support this year."</blockquote></div></div>
+</details>
+<details class="card" style="border-left-color:#16a34a">
+  <summary>
+    <span class="t-row">
+      <span class="ticker">HUBS</span>
+      <span class="name">HubSpot</span>
+      <span class="cohort">SaaS</span>
+    </span>
+  </summary>
+  <div class="body"><div class="q"><blockquote>"Non-GAAP operating margin was 18%, up 4 points compared to the year-ago period. This expansion reflects our disciplined approach to hiring and the benefit from FX movements and our partner commissions program change, partially offset by strategic investments in AI initiatives."</blockquote></div></div>
+</details>
+</body>
+</html>
